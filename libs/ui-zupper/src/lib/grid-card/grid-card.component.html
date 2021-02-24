@@ -1,0 +1,32 @@
+<mat-card
+  id="grid-curso"
+  class="grid-curso"
+>
+  <div class="container-image">
+    <img class="image" [src]="curso.imagem" />
+  </div>
+  <div class="infos">
+    <div id="info-curso" class="info-curso">
+      <strong class="title">{{ curso.nome }}</strong>
+      <span class="sub-title">{{ curso.duracao }}</span>
+    </div>
+    <mat-card-actions>
+      <button
+        [disabled]="curso.situacao == 1"
+        mat-button
+        class="btn-iniciar"
+        (click)="atualizarCurso(curso.id, 1)"
+      >
+        {{ curso.situacao == 1 ? 'Em andamento' : 'Iniciar' }}
+      </button>
+      <button
+        [disabled]="curso.situacao == 0"
+        mat-button
+        class="btn-encerrar"
+        (click)="atualizarCurso(curso.id, 0)"
+      >
+        Encerrar
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>

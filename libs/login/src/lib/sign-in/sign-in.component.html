@@ -1,0 +1,39 @@
+<zup-academy-page-title title="Login Zupper !!"></zup-academy-page-title>
+<mat-card class="login">
+  <mat-card-content>
+    <form [formGroup]="formSignin" (ngSubmit)="autenticar()">
+      <mat-form-field appearance="outline">
+        <mat-label>E-mail</mat-label>
+        <input
+          matInput
+          id="email"
+          type="email"
+          placeholder="E-mail"
+          name="email"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input
+          type="password"
+          matInput
+          id="senha"
+          placeholder="Senha"
+          name="senha"
+          formControlName="senha"
+        />
+      </mat-form-field>
+      <mat-card-actions>
+        <button
+          type="submit"
+          [disabled]="!formSignin.valid"
+          mat-raised-button
+          class="btn-login"
+        >
+          Entrar
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>

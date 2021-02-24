@@ -1,0 +1,31 @@
+<mat-card
+  id="card-curso"
+  class="card-curso"
+  [style.background-color]="curso.situacao == 1 ? '#8dc63f' : '#FFF'"
+>
+  <div id="info-curso" class="info-curso">
+    <strong class="title">{{ curso.nome }}</strong>
+    <span class="sub-title">{{ curso.duracao }}</span>
+  </div>
+  <mat-card-content>
+    <p #descricao [style.color]="curso.situacao == 1 ? '#FFF' : '#939598'">{{ curso.descricao }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      [disabled]="curso.situacao == 1"
+      mat-button
+      class="btn-iniciar"
+      (click)="atualizarCurso(curso.id, 1)"
+    >
+      {{ curso.situacao == 1 ? 'Em andamento' : 'Iniciar' }}
+    </button>
+    <button
+      [disabled]="curso.situacao == 0"
+      mat-button
+      class="btn-encerrar"
+      (click)="atualizarCurso(curso.id, 0)"
+    >
+      Encerrar
+    </button>
+  </mat-card-actions>
+</mat-card>

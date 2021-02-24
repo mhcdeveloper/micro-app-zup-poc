@@ -1,0 +1,64 @@
+.grid-curso {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.container-image {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos {
+  height: 30%;
+}
+
+.info-curso {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c3455;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: #0c3455;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-iniciar {
+  background-color: #8dc63f;
+  color: #FFFFFF;
+}
+
+.btn-encerrar {
+  background-color: #ef4123;
+  color: #FFFFFF;
+}
+
+.image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}

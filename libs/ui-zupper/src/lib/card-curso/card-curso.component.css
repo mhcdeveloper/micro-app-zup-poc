@@ -1,0 +1,50 @@
+.card-curso {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.info-curso {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c3455;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: #0c3455;
+}
+
+.mat-card-content p {
+  padding-top: 8px;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-iniciar {
+  background-color: #8dc63f;
+  color: #FFFFFF;
+}
+
+.btn-encerrar {
+  background-color: #ef4123;
+  color: #FFFFFF;
+}

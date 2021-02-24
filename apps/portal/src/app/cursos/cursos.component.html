@@ -1,0 +1,23 @@
+<zup-academy-nav-bar></zup-academy-nav-bar>
+<div class="title-action">
+  <zup-academy-page-title title="Lista de Cursos"></zup-academy-page-title>
+  <zup-academy-btn-icon
+    iconNome="fas fa-table"
+    [ativo]="mostrarGrid"
+    (clicado)="alterarGrid()"
+  ></zup-academy-btn-icon>
+</div>
+<div class="cursos">
+  <div *ngFor="let curso of cursos">
+    <zup-academy-card-curso
+      *ngIf="!mostrarGrid"
+      [curso]="curso"
+      (cursoAtualizado)="cursoAtualizado($event)"
+    ></zup-academy-card-curso>
+    <zup-academy-grid-card
+      *ngIf="mostrarGrid"
+      [curso]="curso"
+      (cursoAtualizado)="cursoAtualizado($event)"
+    ></zup-academy-grid-card>
+  </div>
+</div>

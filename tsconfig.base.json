@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@zup-academy/ui-zupper": ["libs/ui-zupper/src/index.ts"],
+      "@zup-academy/interfaces": ["libs/interfaces/src/index.ts"],
+      "@zup-academy/login": ["libs/login/src/index.ts"],
+      "@zup-academy/guards-routes": ["libs/guards-routes/src/index.ts"],
+      "@zup-academy/material": ["libs/material/src/index.ts"],
+      "@zup-academy/shared/assets": ["libs/shared/assets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
